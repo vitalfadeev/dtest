@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-alias-this-method
+dtest-alias-this-method.so
+dtest-alias-this-method.dylib
+dtest-alias-this-method.dll
+dtest-alias-this-method.a
+dtest-alias-this-method.lib
+dtest-alias-this-method-test-*
+*.exe
+*.o
+*.obj
+*.lst

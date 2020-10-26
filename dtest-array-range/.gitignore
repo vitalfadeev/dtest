@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-array-range
+dtest-array-range.so
+dtest-array-range.dylib
+dtest-array-range.dll
+dtest-array-range.a
+dtest-array-range.lib
+dtest-array-range-test-*
+*.exe
+*.o
+*.obj
+*.lst

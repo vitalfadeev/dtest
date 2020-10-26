@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-uda
+dtest-uda.so
+dtest-uda.dylib
+dtest-uda.dll
+dtest-uda.a
+dtest-uda.lib
+dtest-uda-test-*
+*.exe
+*.o
+*.obj
+*.lst

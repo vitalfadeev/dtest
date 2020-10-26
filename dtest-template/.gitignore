@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-template
+dtest-template.so
+dtest-template.dylib
+dtest-template.dll
+dtest-template.a
+dtest-template.lib
+dtest-template-test-*
+*.exe
+*.o
+*.obj
+*.lst

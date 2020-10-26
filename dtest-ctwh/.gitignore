@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtests-ctwh
+dtests-ctwh.so
+dtests-ctwh.dylib
+dtests-ctwh.dll
+dtests-ctwh.a
+dtests-ctwh.lib
+dtests-ctwh-test-*
+*.exe
+*.o
+*.obj
+*.lst

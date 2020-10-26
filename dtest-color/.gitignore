@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-color
+dtest-color.so
+dtest-color.dylib
+dtest-color.dll
+dtest-color.a
+dtest-color.lib
+dtest-color-test-*
+*.exe
+*.o
+*.obj
+*.lst

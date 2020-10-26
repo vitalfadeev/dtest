@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-split
+dtest-split.so
+dtest-split.dylib
+dtest-split.dll
+dtest-split.a
+dtest-split.lib
+dtest-split-test-*
+*.exe
+*.o
+*.obj
+*.lst

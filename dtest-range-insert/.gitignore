@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-range-insert
+dtest-range-insert.so
+dtest-range-insert.dylib
+dtest-range-insert.dll
+dtest-range-insert.a
+dtest-range-insert.lib
+dtest-range-insert-test-*
+*.exe
+*.o
+*.obj
+*.lst

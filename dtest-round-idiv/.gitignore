@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-round-idiv
+dtest-round-idiv.so
+dtest-round-idiv.dylib
+dtest-round-idiv.dll
+dtest-round-idiv.a
+dtest-round-idiv.lib
+dtest-round-idiv-test-*
+*.exe
+*.o
+*.obj
+*.lst

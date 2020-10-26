@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-circle
+dtest-circle.so
+dtest-circle.dylib
+dtest-circle.dll
+dtest-circle.a
+dtest-circle.lib
+dtest-circle-test-*
+*.exe
+*.o
+*.obj
+*.lst

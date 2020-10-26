@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-wndproc
+dtest-wndproc.so
+dtest-wndproc.dylib
+dtest-wndproc.dll
+dtest-wndproc.a
+dtest-wndproc.lib
+dtest-wndproc-test-*
+*.exe
+*.o
+*.obj
+*.lst

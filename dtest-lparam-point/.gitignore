@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-lparam-point
+dtest-lparam-point.so
+dtest-lparam-point.dylib
+dtest-lparam-point.dll
+dtest-lparam-point.a
+dtest-lparam-point.lib
+dtest-lparam-point-test-*
+*.exe
+*.o
+*.obj
+*.lst

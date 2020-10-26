@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-interface-method
+dtest-interface-method.so
+dtest-interface-method.dylib
+dtest-interface-method.dll
+dtest-interface-method.a
+dtest-interface-method.lib
+dtest-interface-method-test-*
+*.exe
+*.o
+*.obj
+*.lst

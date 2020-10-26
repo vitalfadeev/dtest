@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-tpl
+dtest-tpl.so
+dtest-tpl.dylib
+dtest-tpl.dll
+dtest-tpl.a
+dtest-tpl.lib
+dtest-tpl-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-direntry
+dtest-direntry.so
+dtest-direntry.dylib
+dtest-direntry.dll
+dtest-direntry.a
+dtest-direntry.lib
+dtest-direntry-test-*
+*.exe
+*.o
+*.obj
+*.lst

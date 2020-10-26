@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-init
+dtest-init.so
+dtest-init.dylib
+dtest-init.dll
+dtest-init.a
+dtest-init.lib
+dtest-init-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-async
+dtest-async.so
+dtest-async.dylib
+dtest-async.dll
+dtest-async.a
+dtest-async.lib
+dtest-async-test-*
+*.exe
+*.o
+*.obj
+*.lst

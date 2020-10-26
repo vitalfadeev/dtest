@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-factory
+dtest-factory.so
+dtest-factory.dylib
+dtest-factory.dll
+dtest-factory.a
+dtest-factory.lib
+dtest-factory-test-*
+*.exe
+*.o
+*.obj
+*.lst

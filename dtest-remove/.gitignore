@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-remove
+dtest-remove.so
+dtest-remove.dylib
+dtest-remove.dll
+dtest-remove.a
+dtest-remove.lib
+dtest-remove-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-onkeydown
+dtest-onkeydown.so
+dtest-onkeydown.dylib
+dtest-onkeydown.dll
+dtest-onkeydown.a
+dtest-onkeydown.lib
+dtest-onkeydown-test-*
+*.exe
+*.o
+*.obj
+*.lst

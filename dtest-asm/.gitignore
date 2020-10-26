@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-asm
+dtest-asm.so
+dtest-asm.dylib
+dtest-asm.dll
+dtest-asm.a
+dtest-asm.lib
+dtest-asm-test-*
+*.exe
+*.o
+*.obj
+*.lst

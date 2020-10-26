@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-union
+dtest-union.so
+dtest-union.dylib
+dtest-union.dll
+dtest-union.a
+dtest-union.lib
+dtest-union-test-*
+*.exe
+*.o
+*.obj
+*.lst

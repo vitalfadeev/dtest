@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-struct-param
+dtest-struct-param.so
+dtest-struct-param.dylib
+dtest-struct-param.dll
+dtest-struct-param.a
+dtest-struct-param.lib
+dtest-struct-param-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-struct-delegate
+dtest-struct-delegate.so
+dtest-struct-delegate.dylib
+dtest-struct-delegate.dll
+dtest-struct-delegate.a
+dtest-struct-delegate.lib
+dtest-struct-delegate-test-*
+*.exe
+*.o
+*.obj
+*.lst

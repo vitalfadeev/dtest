@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-arg-struct
+dtest-arg-struct.so
+dtest-arg-struct.dylib
+dtest-arg-struct.dll
+dtest-arg-struct.a
+dtest-arg-struct.lib
+dtest-arg-struct-test-*
+*.exe
+*.o
+*.obj
+*.lst

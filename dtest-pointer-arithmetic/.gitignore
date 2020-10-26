@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-pointer-arithmetic
+dtest-pointer-arithmetic.so
+dtest-pointer-arithmetic.dylib
+dtest-pointer-arithmetic.dll
+dtest-pointer-arithmetic.a
+dtest-pointer-arithmetic.lib
+dtest-pointer-arithmetic-test-*
+*.exe
+*.o
+*.obj
+*.lst

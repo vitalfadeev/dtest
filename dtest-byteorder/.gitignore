@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-byteorder
+dtest-byteorder.so
+dtest-byteorder.dylib
+dtest-byteorder.dll
+dtest-byteorder.a
+dtest-byteorder.lib
+dtest-byteorder-test-*
+*.exe
+*.o
+*.obj
+*.lst

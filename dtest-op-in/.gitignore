@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-op-in
+dtest-op-in.so
+dtest-op-in.dylib
+dtest-op-in.dll
+dtest-op-in.a
+dtest-op-in.lib
+dtest-op-in-test-*
+*.exe
+*.o
+*.obj
+*.lst

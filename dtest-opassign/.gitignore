@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-opassign
+dtest-opassign.so
+dtest-opassign.dylib
+dtest-opassign.dll
+dtest-opassign.a
+dtest-opassign.lib
+dtest-opassign-test-*
+*.exe
+*.o
+*.obj
+*.lst

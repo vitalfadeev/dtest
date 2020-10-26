@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-demangle
+dtest-demangle.so
+dtest-demangle.dylib
+dtest-demangle.dll
+dtest-demangle.a
+dtest-demangle.lib
+dtest-demangle-test-*
+*.exe
+*.o
+*.obj
+*.lst
