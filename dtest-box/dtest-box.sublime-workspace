@@ -1,0 +1,1827 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DrawCircle",
+				"DrawCircleSinCos"
+			],
+			[
+				"C",
+				"CLOCKWISE"
+			],
+			[
+				"D",
+				"Direction"
+			],
+			[
+				"Pre",
+				"precalculatedRound"
+			],
+			[
+				"P",
+				"POINT"
+			],
+			[
+				"Wr",
+				"Writeln"
+			],
+			[
+				"in",
+				"indexes"
+			],
+			[
+				"x",
+				"xIndexes"
+			],
+			[
+				"prec",
+				"precalculatedRound"
+			],
+			[
+				"pre",
+				"precalculatedRound"
+			],
+			[
+				"p",
+				"precalculated"
+			],
+			[
+				"RA",
+				"RADIUS"
+			],
+			[
+				"l",
+				"LengthT"
+			],
+			[
+				"ptr",
+				"ptrIndex"
+			],
+			[
+				"preca",
+				"precalculated"
+			],
+			[
+				"cir",
+				"circle"
+			],
+			[
+				"c",
+				"circle"
+			],
+			[
+				"for",
+				"foreach"
+			],
+			[
+				"new",
+				"newR"
+			],
+			[
+				"de",
+				"deltaR"
+			],
+			[
+				"M",
+				"MidPointEllipseDraw"
+			],
+			[
+				"off",
+				"offsetLeft"
+			],
+			[
+				"of",
+				"offsetLeft"
+			],
+			[
+				"Uno",
+				"UnoHWND"
+			],
+			[
+				"LP",
+				"LPARAM"
+			],
+			[
+				"font",
+				"fontPointer"
+			],
+			[
+				"Select",
+				"SelectFont"
+			],
+			[
+				"Load",
+				"LoadFont"
+			],
+			[
+				"base",
+				"baselineY"
+			],
+			[
+				"ba",
+				"baselineY2"
+			],
+			[
+				"s",
+				"Symbol"
+			],
+			[
+				"B",
+				"BoxType"
+			],
+			[
+				"w",
+				"with\twith … "
+			],
+			[
+				"str",
+				"struct\tstruct … { … }"
+			],
+			[
+				"Bo",
+				"Box"
+			],
+			[
+				"Disp",
+				"displayIsBlockLevel"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"RE",
+				"RELATIVE"
+			],
+			[
+				"St",
+				"STATIC"
+			],
+			[
+				"no",
+				"nothrow"
+			],
+			[
+				"E",
+				"EventType"
+			],
+			[
+				"get",
+				"getAttributeTpl"
+			],
+			[
+				"next",
+				"nextElementSibling"
+			],
+			[
+				"first",
+				"firstElementChild"
+			],
+			[
+				"lis",
+				"listener"
+			],
+			[
+				"eve",
+				"EventType"
+			],
+			[
+				"Eve",
+				"EventType"
+			],
+			[
+				"No",
+				"NodeType"
+			],
+			[
+				"remove",
+				"removeChild"
+			],
+			[
+				"remoe",
+				"removeChild"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"cla",
+				"classList"
+			],
+			[
+				"ne",
+				"nextSibling"
+			],
+			[
+				"nex",
+				"nextSibling"
+			],
+			[
+				"node",
+				"nodeType"
+			],
+			[
+				"cont",
+				"contains"
+			],
+			[
+				"ch",
+				"childNodes"
+			],
+			[
+				"clo",
+				"cloneNode"
+			],
+			[
+				"a",
+				"appendChild"
+			],
+			[
+				"prev",
+				"previousSibling"
+			],
+			[
+				"Ev",
+				"EventListener"
+			],
+			[
+				"Draw",
+				"DrawText"
+			],
+			[
+				"bo",
+				"borderTopWidth"
+			],
+			[
+				"b",
+				"break"
+			],
+			[
+				"sw",
+				"switch"
+			],
+			[
+				"border",
+				"borderLeftWidth"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"elementH",
+				"elementHeight"
+			],
+			[
+				"GetWidthInline",
+				"GetWidthInlineTable"
+			],
+			[
+				"Ge",
+				"GetWidthBlock"
+			],
+			[
+				"Get",
+				"GetWidthInline"
+			],
+			[
+				"margin",
+				"marginLeft"
+			],
+			[
+				"chil",
+				"childWidth"
+			],
+			[
+				"chi",
+				"childWidthMax"
+			],
+			[
+				"W",
+				"WidthMode"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"Display",
+				"displayOutside"
+			],
+			[
+				"Di",
+				"DisplayInternal"
+			],
+			[
+				"Dis",
+				"DisplayBox"
+			],
+			[
+				"V",
+				"VISIBLE"
+			],
+			[
+				"root",
+				"rootPoint"
+			],
+			[
+				"roo",
+				"rootMargin"
+			],
+			[
+				"Ele",
+				"Element"
+			],
+			[
+				"IN",
+				"INLINE"
+			],
+			[
+				"va",
+				"valueString"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"wri",
+				"writeln"
+			],
+			[
+				"value",
+				"valueString"
+			],
+			[
+				"Com",
+				"Compute"
+			],
+			[
+				"marg",
+				"marginLeft"
+			],
+			[
+				"Comp",
+				"Compute_left"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"Up",
+				"UpdatePos"
+			],
+			[
+				"fr",
+				"foreach"
+			],
+			[
+				"Display_",
+				"Display_Block"
+			],
+			[
+				"tr",
+				"try"
+			],
+			[
+				"WM",
+				"WM_MOUSEMOVE"
+			],
+			[
+				"uint",
+				"UINT"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"Dra",
+				"Draw"
+			],
+			[
+				"main",
+				"mainWidget"
+			],
+			[
+				"widge",
+				"widgetStateA"
+			],
+			[
+				"Wid",
+				"Widget"
+			],
+			[
+				"widg",
+				"WidgetState"
+			],
+			[
+				"A",
+				"ALTERNATE"
+			],
+			[
+				"t",
+				"timingFunc"
+			],
+			[
+				"animationU",
+				"animationIterationCount"
+			],
+			[
+				"fillM",
+				"animationFillMode"
+			],
+			[
+				"anim",
+				"Animation"
+			],
+			[
+				"dur",
+				"duration"
+			],
+			[
+				"Ani",
+				"AnimationTimingFunction"
+			],
+			[
+				"to",
+				"toProps"
+			],
+			[
+				"from",
+				"fromProps"
+			],
+			[
+				"AnimateEleme",
+				"AnimateElementProperties"
+			],
+			[
+				"tim",
+				"timingFunc"
+			],
+			[
+				"ER",
+				"eRight"
+			],
+			[
+				"win",
+				"winWidth"
+			],
+			[
+				"rect",
+				"rectHeight"
+			],
+			[
+				"comp",
+				"computed"
+			],
+			[
+				"toS",
+				"toSubFrame"
+			],
+			[
+				"Va",
+				"ValueType"
+			],
+			[
+				"tra",
+				"__traits"
+			],
+			[
+				"time",
+				"timeOffset"
+			],
+			[
+				"Sub",
+				"SubFrame"
+			],
+			[
+				"k",
+				"KeyFrame"
+			],
+			[
+				"aS",
+				"aStartTime"
+			],
+			[
+				"0xFF",
+				"0xFF0000"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/app.d",
+			"settings":
+			{
+				"buffer_size": 420,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/uno_window.d",
+			"settings":
+			{
+				"buffer_size": 13946,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/precalculate.d",
+			"settings":
+			{
+				"buffer_size": 10308,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/src/1-GUIlibs/dg2d/dub.json",
+			"settings":
+			{
+				"buffer_size": 581,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/vital/AppData/Local/dub/packages/intel-intrinsics-1.3.0/intel-intrinsics/source/inteli/types.d",
+			"settings":
+			{
+				"buffer_size": 12990,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/src/1-GUIlibs/dg2d/source/demo/canvas.d",
+			"settings":
+			{
+				"buffer_size": 8257,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/src/1-GUIlibs/dg2d/source/demo/font.d",
+			"settings":
+			{
+				"buffer_size": 4015,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/src/1-GUIlibs/dg2d/source/misc.d",
+			"settings":
+			{
+				"buffer_size": 9549,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/math.d",
+			"settings":
+			{
+				"buffer_size": 478,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/roof.txt",
+			"settings":
+			{
+				"buffer_size": 348,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "// ----------------------------------"
+			}
+		},
+		{
+			"file": "source/types.d",
+			"settings":
+			{
+				"buffer_size": 667,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "core.d"
+			}
+		},
+		{
+			"file": "source/circle.d",
+			"settings":
+			{
+				"buffer_size": 6015,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "circle.d"
+			}
+		}
+	],
+	"build_system": "Packages/D/D dub.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/D/D dub.sublime-build",
+					""
+				],
+				[
+					"Packages/D/D dub.sublime-build",
+					"dub Run"
+				],
+				[
+					"Packages/D/D.sublime-build",
+					""
+				],
+				[
+					"Packages/D/D.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/D/D dub.sublime-build",
+				"dub Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"r",
+				"Build With: D dub - dub Run"
+			],
+			[
+				"run",
+				"Build With: D dub - dub Run"
+			],
+			[
+				"ru",
+				"Build With: D dub - dub Run"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"build",
+				"Build With: D dub - dub Run"
+			],
+			[
+				"d",
+				"Build With: D - Run"
+			],
+			[
+				"ins",
+				"Install Package Control"
+			],
+			[
+				"ma",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"Pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: if …"
+			],
+			[
+				"Install Package Control",
+				"Install Package Control"
+			],
+			[
+				"sublimr",
+				"Sublime Merge: Open Repository"
+			],
+			[
+				"sub",
+				"sublime-d: Outline Document"
+			],
+			[
+				"lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"LSP",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"LSP: ",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"LSP: Enable Language Server Globally",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"Simple",
+				"Snippet: debug(module) { … }"
+			],
+			[
+				"Snippet: if",
+				"Snippet: if …"
+			],
+			[
+				"Package Control: align ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"print(1)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/src/dtest-box",
+		"/C/src/dtest-box/source"
+	],
+	"file_history":
+	[
+		"/C/src/dtest-round-idiv/source/app.d",
+		"/C/src/dub-subprojects/unohotkeys/dub.json",
+		"/C/src/dub-subprojects/README.md",
+		"/C/src/tmp/dub-subprojects/unohotkeys/dub.json",
+		"/C/src/tmp/dub-subprojects/uno/dub.json",
+		"/C/src/dub-subprojects/dub.json",
+		"/C/src/tmp/dub-subprojects/dub.json",
+		"/C/src/dub-subprojects/unopanel/dub.json",
+		"/C/src/dub-subprojects/unopanel/source/main.d",
+		"/C/src/dub-subprojects/unohotkeys/source/main.d",
+		"/C/src/dub-subprojects/uno/dub.json",
+		"/C/src/dtest-box/core.exception.AssertError@source/tools.d",
+		"/C/src/dtest-box/0x00007FF7E4D66325 in precalculate.PrecalculatedRound!byte.PrecalculatedRound.GetStep at C:/src/dtest-box/source/precalculate.d",
+		"/C/src/dtest-asm/source/app.d",
+		"/C/src/dtest-box/source/radian.txt",
+		"/C/D/dmd2/src/phobos/std/algorithm/searching.d",
+		"/C/src/dtest-box/source/windows.d",
+		"/C/src/dtest-box/source/utf.d",
+		"/C/src/dtest-box/source/hdc.d",
+		"/C/src/dtest-box/0x00007FF78AB26644 in uno_window.DrawSpiro at C:/src/dtest-box/source/uno_window.d",
+		"/C/src/dtest-box/source/hwnd.d",
+		"/C/src/dtest-box/core.exception.AssertError@source/uno_window.d",
+		"/C/src/dtest-box/source/box.d",
+		"/C/src/dtest-time/source/app.d",
+		"/C/src/dtest-box/source/doc.d",
+		"/C/src/dtest-box/source/layouter.d",
+		"/C/src/dtest-box/dub.json",
+		"/C/src/dtest-time/source/windows.d",
+		"/C/src/dtest-box/source/tools.d",
+		"/C/src/dtest-time/source/element.d",
+		"/C/src/dtest-time/source/node.d",
+		"/C/src/dtest-box/source/value.d",
+		"/C/src/dtest-box/dtest-box.sublime-project",
+		"/C/src/dtest-time/source/animator.d",
+		"/C/src/dtest-time/source/uno_window.d",
+		"/C/src/dtest-time/source/drawer.d",
+		"/C/src/dtest-time/source/layouter.d",
+		"/C/src/dtest-time/source/boxes.d",
+		"/C/src/dtest-time/source/span.txt",
+		"/C/src/dtest-time/source/tools.d",
+		"/C/src/dtest-time/source/computer.d",
+		"/C/src/dtest-time/source/eventtarget.d",
+		"/C/src/dtest-time/source/event.d",
+		"/C/src/dtest-time/source/value.d",
+		"/C/src/dtest-time/source/box.d",
+		"/C/src/dtest-time/source/живой.txt",
+		"/C/src/dtest-time/source/viewport.d",
+		"/C/src/dtest-time/mixins.d",
+		"/C/src/dtest-time/source/customelements.d",
+		"/C/src/dtest-time/source/promise.d",
+		"/C/D/dmd2/src/phobos/std/format.d",
+		"/C/src/UnoShell/uno/source/value.d",
+		"/C/src/UnoShell/uno/source/computeproperties.d",
+		"/C/src/dtest-time/0x00007FF7111CB059 in uno_window.Computer.Compute_Property!(\"lineHeight\", Compute_Number, Compute_Inherit).Compute_Property at C:/src/dtest-time/mixins.d",
+		"/C/src/dtest-time/core.exception.AssertError@source/uno_window.d",
+		"/C/src/UnoShell/uno/source/element.d",
+		"/C/src/dtest-time/source/uno_window.d-mixin-612",
+		"/C/src/UnoShell/uno/source/node.d",
+		"/C/src/UnoShell/uno/source/windowstyle.d",
+		"/C/src/UnoShell/uno/source/error.d",
+		"/C/src/UnoShell/uno/source/font.d",
+		"/C/src/UnoShell/uno/source/utf.d",
+		"/C/src/UnoShell/uno/source/device.d",
+		"/C/src/UnoShell/uno/source/window.d",
+		"/C/src/UnoShell/uno/source/appbar.d",
+		"/C/src/UnoShell/uno/source/screen.d",
+		"/C/src/UnoShell/uno/source/csscolors.d",
+		"/C/src/UnoShell/uno/source/types.d",
+		"/C/src/UnoShell/uno/source/sys/windows/events.d",
+		"/C/src/UnoShell/uno/source/eventrouter.d",
+		"/C/src/UnoShell/uno/source/precalculate.d",
+		"/C/src/UnoShell/uno/source/easing.d",
+		"/C/src/UnoShell/uno/source/eventloop.d",
+		"/C/src/UnoShell/uno/source/windowmanager.d",
+		"/C/src/UnoShell/uno/source/paint.d",
+		"/C/src/UnoShell/uno/source/eventer.d",
+		"/C/src/UnoShell/uno/source/layout.d",
+		"/C/src/UnoShell/uno/source/style.d",
+		"/C/src/UnoShell/uno/source/updater.d",
+		"/C/src/UnoShell/uno/source/sys/windows/windef.d",
+		"/C/src/UnoShell/uno/source/animator.d",
+		"/C/src/UnoShell/uno/source/color.d",
+		"/C/src/UnoShell/uno/source/animation.d",
+		"/C/src/UnoShell/uno/source/app.d",
+		"/C/src/dtest-wndproc/source/app.d",
+		"/C/src/dtest-wndproc/source/windows.d",
+		"/C/src/dtest-color/source/app.d",
+		"/C/src/UnoShell/mixins.d",
+		"/C/D/dmd2/src/phobos/std/conv.d",
+		"/C/src/dtest-arg-struct/source/app.d",
+		"/C/src/UnoShell/.gitignore",
+		"/C/src/UnoShell/UnoShell.sublime-workspace",
+		"/C/Users/vital/Documents/Соус из красной смородины.txt",
+		"/C/src/dtest-struct-delegate/source/app.d",
+		"/C/src/UnoShell-v2/uno/source/ui/sys/windows/windowsurface.d",
+		"/C/Users/vital/Documents/воля.d",
+		"/C/src/UnoShell/uno/dub.json",
+		"/C/src/UnoShell/dub.json",
+		"/C/Users/vital/AppData/Local/dub/packages/consoled-1.0.4/consoled/source/terminal.d",
+		"/C/src/UnoShell/uno/source/property/display/inline.d",
+		"/C/src/UnoShell/uno/source/property/display/block.d",
+		"/C/src/UnoShell/uno/source/property/display/flex.d",
+		"/C/src/UnoShell/uno/source/doctree.d",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-466-mixin-469-mixin-472",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-324",
+		"/C/src/UnoShell-v2/uno/source/ui/sys/windows/syswindow.d",
+		"/C/src/UnoShell-v2/uno/source/ui/sys/windows/surface/window.d",
+		"/C/src/UnoShell-v2/uno/source/ui/surface/image.d",
+		"/C/src/UnoShell-v2/uno/source/ui/surface/window.d",
+		"/C/src/UnoShell-v3/uno/source/ui/renderer.d",
+		"/C/src/UnoShell-v3/uno/source/ui/gl.md",
+		"/C/src/UnoShell-v3/uno/source/ui/renderer/gdi/syswindow.d",
+		"/C/src/UnoShell-v3/uno/source/ui/renderer/gdi/gdi.d",
+		"/C/src/UnoShell-v3/uno/source/ui/surface/window.d",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-258",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-257",
+		"/C/D/dmd2/src/phobos/std/array.d",
+		"/C/src/SublimeDlangAutoFileName/Readme.md",
+		"/C/src/SublimeDlangAutoFileName/auto_file_name.py",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-253-mixin-267",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-253-mixin-262",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-253-mixin-257",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-253",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-253-mixin-256",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-208",
+		"/C/src/dtest-split/source/app.d",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-471-mixin-474",
+		"/C/src/UnoShell/uno/source/computeproperties.d-mixin-462"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 121.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"alloc",
+			"cast",
+			"DrawSpiro",
+			"Setixel",
+			"PutPixel",
+			"ulong",
+			"PrecalculatedRound",
+			"Direction",
+			"uint r",
+			"precalculatedIndex",
+			"typeof",
+			"precalculated",
+			"CPOI",
+			"x_centre",
+			"y_centre",
+			"winapi",
+			"Select",
+			"native",
+			"GetFont",
+			"CreateFontIndirectW",
+			"HDC",
+			"Writeln",
+			"winapi",
+			"Node",
+			"remove"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"SetPixel",
+			"Setixel",
+			"C.x",
+			"C.y",
+			"Box"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/app.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/uno_window.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10081,
+								10081
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8645.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/precalculate.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8233,
+								8233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6736.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/src/1-GUIlibs/dg2d/dub.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/vital/AppData/Local/dub/packages/intel-intrinsics-1.3.0/intel-intrinsics/source/inteli/types.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12990,
+						"regions":
+						{
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_fill.png",
+								"regions":
+								[
+									[
+										4584,
+										4584
+									],
+									[
+										5761,
+										5761
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								9960,
+								9960
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6959.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/src/1-GUIlibs/dg2d/source/demo/canvas.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								636,
+								636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/src/1-GUIlibs/dg2d/source/demo/font.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/src/1-GUIlibs/dg2d/source/misc.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2073,
+								2073
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1867.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "source/math.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "source/roof.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// ----------------------------------",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "source/types.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "source/circle.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6015,
+								6015
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3830.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 44.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 282.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dtest-box.sublime-project",
+	"replace":
+	{
+		"height": 84.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"read",
+				"uno\\deps\\d-leveldb\\README.md"
+			],
+			[
+				"styl",
+				"uno\\source\\ui\\customstyle.d"
+			],
+			[
+				"evabl",
+				"uno\\source\\ui\\ievable.d"
+			],
+			[
+				"uno",
+				"uno\\source\\ui\\uno.d"
+			],
+			[
+				"iuno",
+				"uno\\source\\ui\\iuno.d"
+			],
+			[
+				"eve",
+				"uno\\source\\ui\\event\\event.d"
+			],
+			[
+				"s",
+				"uno\\source\\ui\\style.d"
+			],
+			[
+				"cu",
+				"uno\\source\\ui\\customstyle.d"
+			],
+			[
+				"style",
+				"uno\\source\\ui\\istyleable.d"
+			],
+			[
+				"sty",
+				"uno\\source\\ui\\style.d"
+			],
+			[
+				"ieve",
+				"uno\\source\\ui\\ievable.d"
+			],
+			[
+				"ty",
+				"uno\\source\\ui\\types.d"
+			],
+			[
+				"unopa",
+				"unopanel\\source\\log.d"
+			],
+			[
+				"h",
+				"uno\\source\\ui\\layout\\hbox.d"
+			],
+			[
+				"v",
+				"uno\\source\\ui\\layout\\vbox.d"
+			],
+			[
+				"appba",
+				"uno\\source\\ui\\sys\\windows\\surface\\appbar.d"
+			],
+			[
+				"tpes",
+				"uno\\source\\ui\\types.d"
+			],
+			[
+				"Log",
+				"uno\\source\\ui\\log.d"
+			],
+			[
+				"syswin",
+				"uno\\source\\ui\\sys\\windows\\syswindow.d"
+			],
+			[
+				"error",
+				"uno\\source\\uno\\sys\\error.d"
+			],
+			[
+				"hcenter",
+				"uno\\source\\ui\\layout\\hcenter.d"
+			],
+			[
+				"rig",
+				"uno\\source\\ui\\layout\\right.d"
+			],
+			[
+				"hbox",
+				"uno\\source\\ui\\layout\\hbox.d"
+			],
+			[
+				"math",
+				"uno\\source\\ui\\sys\\windows\\math.d"
+			],
+			[
+				"vbox",
+				"uno\\source\\ui\\layout\\vbox.d"
+			],
+			[
+				"ila",
+				"uno\\source\\ui\\ilayout.d"
+			],
+			[
+				"AsyncImageLoader",
+				"uno\\source\\ui\\asyncimageloader.d"
+			],
+			[
+				"applica",
+				"uno\\source\\ui\\application.d"
+			],
+			[
+				"ImageFactoryAsync",
+				"uno\\source\\ui\\imagefactoryasync.d"
+			],
+			[
+				"imagefa",
+				"uno\\source\\ui\\imagefactory.d"
+			],
+			[
+				"st",
+				"uno\\source\\ui\\style.d"
+			],
+			[
+				"err",
+				"uno\\source\\uno\\sys\\error.d"
+			],
+			[
+				"gra",
+				"uno\\source\\ui\\graphics.d"
+			],
+			[
+				"hb",
+				"uno\\source\\ui\\layout\\hbox.d"
+			],
+			[
+				"grid",
+				"uno\\source\\ui\\layout\\grid.d"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"_wid",
+				"Compute_width"
+			],
+			[
+				"width",
+				"Compute_width"
+			],
+			[
+				"appl",
+				"ApplyStyles"
+			],
+			[
+				"uno",
+				"Uno"
+			],
+			[
+				"style",
+				"Style"
+			],
+			[
+				"syswindow",
+				"SysWindow"
+			],
+			[
+				"loop",
+				"EventLoop"
+			],
+			[
+				"isur",
+				"isurface"
+			],
+			[
+				"cus",
+				"CustomStyle"
+			],
+			[
+				"paint",
+				"Paint"
+			],
+			[
+				"window",
+				"WindowSurface"
+			],
+			[
+				"eve",
+				"EventLoop"
+			],
+			[
+				"createc",
+				"_CreateClass"
+			],
+			[
+				"begin",
+				"BeginPaint"
+			],
+			[
+				"proc",
+				"WinProc"
+			],
+			[
+				"win",
+				"WinMain"
+			],
+			[
+				"createw",
+				"_CreateWindow"
+			],
+			[
+				"borderw",
+				"borderWidth"
+			],
+			[
+				"borderW",
+				"borderWidth"
+			],
+			[
+				"cust",
+				"CustomStyle"
+			],
+			[
+				"calculate",
+				"Calculate"
+			],
+			[
+				"calcula",
+				"Calculate"
+			],
+			[
+				"surface",
+				"Surfaceable"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"customstyle",
+				"CustomStyle"
+			],
+			[
+				"appli",
+				"application"
+			],
+			[
+				"application",
+				"Application"
+			],
+			[
+				"syswinwo",
+				"SysWindow"
+			],
+			[
+				"inputdevice",
+				"InputDevice"
+			],
+			[
+				"IEventListener",
+				"IEventListener"
+			],
+			[
+				"wm_messages",
+				"wm_messages"
+			],
+			[
+				"HasFocus",
+				"HasFocus"
+			],
+			[
+				"borderPadding",
+				"borderPadding"
+			],
+			[
+				"textOrientation",
+				"textOrientation"
+			],
+			[
+				"textori",
+				"textOrientation"
+			],
+			[
+				"hasmouse",
+				"HasMouseOver"
+			],
+			[
+				"syswin",
+				"SysWindow"
+			],
+			[
+				"surfaceev",
+				"SurfaceEventCallback"
+			],
+			[
+				"onwindow",
+				"OnWindow"
+			],
+			[
+				"IWindowEvent",
+				"IWindowEvent"
+			],
+			[
+				"iu",
+				"IUno"
+			],
+			[
+				"iuno",
+				"IUno"
+			],
+			[
+				"Uno",
+				"Uno"
+			],
+			[
+				"windoweve",
+				"WindowEvent"
+			],
+			[
+				"windowev",
+				"WindowEvent"
+			],
+			[
+				"windowex",
+				"CatchWindowMaximized"
+			],
+			[
+				"ievent",
+				"IEvent"
+			],
+			[
+				"input",
+				"inputevent"
+			],
+			[
+				"sysw",
+				"SysWindow"
+			],
+			[
+				"ieva",
+				"IEvable"
+			],
+			[
+				"windowpa",
+				"WindowPaintEvent"
+			],
+			[
+				"windows",
+				"WindowSurface"
+			],
+			[
+				"isurfa",
+				"ISurface"
+			],
+			[
+				"BeginPaint",
+				"_BeginPaint"
+			],
+			[
+				"update",
+				"Update"
+			],
+			[
+				"event",
+				"EventLoop"
+			],
+			[
+				"ieve",
+				"IEvent"
+			],
+			[
+				"painteve",
+				"PaintEvent"
+			],
+			[
+				"evable",
+				"Evable"
+			],
+			[
+				"WETYPE",
+				"WETYPE"
+			],
+			[
+				"eventl",
+				"EventLoop"
+			],
+			[
+				"main",
+				"MainLoop"
+			],
+			[
+				"eva",
+				"Evable"
+			],
+			[
+				"evab",
+				"Evable"
+			]
+		],
+		"width": 600.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

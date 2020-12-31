@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-find
+dtest-find.so
+dtest-find.dylib
+dtest-find.dll
+dtest-find.a
+dtest-find.lib
+dtest-find-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,7 @@
+{
+    "name": "dtest-opassign",
+    "description": "A minimal D application.",
+    "projects": {
+        "dtest-opassign": "dub.json"
+    }
+}

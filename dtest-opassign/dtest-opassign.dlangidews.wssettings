@@ -1,0 +1,27 @@
+{
+    "startupProject": "dtest-opassign",
+    "breakpoints": [
+        {
+            "id": 4,
+            "file": "app.d",
+            "line": 46,
+            "enabled": true,
+            "projectName": "dtest-opassign",
+            "projectFilePath": "source\\app.d"
+        }
+    ],
+    "bookmarks": [
+    ],
+    "files": [
+        {
+            "file": "C:\\src\\dtest-opassign\\source\\app.d",
+            "column": 0,
+            "row": 0
+        }
+    ],
+    "expandedItems": [
+        "C:\\src\\dtest-opassign\\source",
+        "C:\\src\\dtest-opassign\\dub.json"
+    ],
+    "selectedWorkspaceItem": "C:\\src\\dtest-opassign\\source\\app.d"
+}

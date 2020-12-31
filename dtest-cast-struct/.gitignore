@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-cast-struct
+dtest-cast-struct.so
+dtest-cast-struct.dylib
+dtest-cast-struct.dll
+dtest-cast-struct.a
+dtest-cast-struct.lib
+dtest-cast-struct-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-gdb
+dtest-gdb.so
+dtest-gdb.dylib
+dtest-gdb.dll
+dtest-gdb.a
+dtest-gdb.lib
+dtest-gdb-test-*
+*.exe
+*.o
+*.obj
+*.lst

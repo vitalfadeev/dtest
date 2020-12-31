@@ -1,0 +1,24 @@
+diff --git "a/C:\\D\\dmd2\\src\\phobos\\std\\file.d" "b/C:\\src\\dtest-DirEntry\\file.d"
+index 7be11a7..18907da 100644
+--- "a/C:\\D\\dmd2\\src\\phobos\\std\\file.d"
++++ "b/C:\\src\\dtest-DirEntry\\file.d"
+@@ -1971,9 +1971,16 @@ private bool existsImpl(const(FSChar)* namez) @trusted nothrow @nogc
+ {
+     version (Windows)
+     {
+-        // http://msdn.microsoft.com/library/default.asp?url=/library/en-us/
+-        // fileio/base/getfileattributes.asp
+-        return GetFileAttributesW(namez) != 0xFFFFFFFF;
++        WIN32_FIND_DATAW fd;
++        auto hFind = FindFirstFile( namez, &fd );
++
++        if ( hFind != INVALID_HANDLE_VALUE )
++        {
++            FindClose( hFind );
++            return true;
++        }
++
++        return false;
+     }
+     else version (Posix)
+     {

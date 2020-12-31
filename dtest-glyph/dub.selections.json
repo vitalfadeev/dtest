@@ -1,0 +1,7 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"dg2d": {"path":"dg2d"},
+		"intel-intrinsics": "1.3.6"
+	}
+}

@@ -1,0 +1,80 @@
+RunBenchmarkFloat():
+                push    RBP
+                mov     RBP,RSP
+                sub     RSP,040h
+                mov     -028h[RBP],RBX
+                mov     EBX,1
+L11:            mov     dword ptr -4[RBP],1
+                mov     EAX,EBX
+                cvtsi2ss        XMM0,EAX
+                movss   -8[RBP],XMM0
+L23:            fild    dword ptr -4[RBP]
+                fdivr   float ptr -8[RBP]
+                fstp    tbyte ptr -040h[RBP]
+                call      roundl@PLT32
+                fstp    qword ptr -020h[RBP]
+                movsd   XMM1,-020h[RBP]
+                cvtsd2ss        XMM2,XMM1
+                inc     dword ptr -4[RBP]
+                mov     ECX,064h
+                cmp     -4[RBP],ECX
+                jb      L23
+                inc     EBX
+                cmp     EBX,ECX
+                jb      L11
+                movss   -020h[RBP],XMM2
+                movss   XMM0,-020h[RBP]
+                mov     RBX,-028h[RBP]
+                mov     RSP,RBP
+                pop     RBP
+                ret
+
+
+RunBenchmarkInt():
+                push    RBP
+                mov     RBP,RSP
+                mov     R8D,0Ah
+LA:             mov     EDI,1
+LF:             mov     EAX,R8D
+                cdq
+                idiv    EDI
+                mov     ESI,EAX
+                mov     ECX,ESI
+                mov     EAX,066666667h
+                imul    ECX
+                mov     RAX,RCX
+                sar     EAX,01Fh
+                sar     EDX,2
+                sub     EDX,EAX
+                imul    EAX,EDX,0Ah
+                sub     ECX,EAX
+                cmp     ECX,5
+                jl      L51
+                mov     R10D,ESI
+                mov     EAX,066666667h
+                imul    R10D
+                mov     RAX,R10
+                sar     EAX,01Fh
+                sar     EDX,2
+                sub     EDX,EAX
+                inc     EDX
+                mov     ESI,EDX
+                jmp short       L69
+L51:            mov     R9D,ESI
+                mov     EAX,066666667h
+                imul    R9D
+                mov     RAX,R9
+                sar     EAX,01Fh
+                sar     EDX,2
+                sub     EDX,EAX
+                mov     ESI,EDX
+L69:            inc     EDI
+                cmp     EDI,064h
+                jb      LF
+                add     R8D,0Ah
+                cmp     R8D,03E8h
+                jb      LA
+                mov     EAX,ESI
+                pop     RBP
+                ret
+

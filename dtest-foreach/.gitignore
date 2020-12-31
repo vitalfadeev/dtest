@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-foreach
+dtest-foreach.so
+dtest-foreach.dylib
+dtest-foreach.dll
+dtest-foreach.a
+dtest-foreach.lib
+dtest-foreach-test-*
+*.exe
+*.o
+*.obj
+*.lst

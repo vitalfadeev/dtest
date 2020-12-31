@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-tree
+dtest-tree.so
+dtest-tree.dylib
+dtest-tree.dll
+dtest-tree.a
+dtest-tree.lib
+dtest-tree-test-*
+*.exe
+*.o
+*.obj
+*.lst

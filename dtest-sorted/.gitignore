@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-sorted
+dtest-sorted.so
+dtest-sorted.dylib
+dtest-sorted.dll
+dtest-sorted.a
+dtest-sorted.lib
+dtest-sorted-test-*
+*.exe
+*.o
+*.obj
+*.lst
