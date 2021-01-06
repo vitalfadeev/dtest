@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"tr",
+				"trustedFindFirstFileW"
+			],
+			[
+				"F",
+				"WIN32_FIND_DATAW"
+			],
+			[
 				"not",
 				"nothrow"
 			],
@@ -16,10 +24,6 @@
 				"pure"
 			],
 			[
-				"tr",
-				"trusted"
-			],
-			[
 				"_",
 				"_handle"
 			],
@@ -30,10 +34,6 @@
 			[
 				"Fil",
 				"FileTreeButton"
-			],
-			[
-				"F",
-				"FileTreeFrame"
 			],
 			[
 				"re",
@@ -519,34 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "source/app.d",
-			"settings":
-			{
-				"buffer_size": 1778,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/direntry.d",
-			"settings":
-			{
-				"buffer_size": 10268,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "fileexception.d"
-			}
-		},
-		{
-			"file": "/C/D/dmd2/src/phobos/std/file.d",
-			"settings":
-			{
-				"buffer_size": 157201,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/D/D dub.sublime-build",
 	"build_system_choices":
@@ -580,12 +552,12 @@
 		"selected_items":
 		[
 			[
-				"run",
-				"Build With: D dub - dub Run"
-			],
-			[
 				"test",
 				"Build With: D dub - dub test"
+			],
+			[
+				"run",
+				"Build With: D dub - dub Run"
 			],
 			[
 				"ru",
@@ -717,11 +689,14 @@
 	},
 	"file_history":
 	[
+		"/C/src/dtest/dtest-tree/source/app.d",
+		"/C/D/dmd2/src/phobos/std/file.d",
+		"/C/src/direntry/dub.json",
+		"/C/src/dtest/dtest-tree/source/direntry.d",
+		"/C/src/arraynode/dub.json",
 		"/C/src/fast-draw-engine/deps/ui/source/ui/filetree.d",
 		"/C/src/dtest/dtest-tree/dub.json",
 		"/C/D/dmd2/src/phobos/std/conv.d",
-		"/C/D/dmd2/src/phobos/std/file.d",
-		"/C/src/dtest/dtest-tree/source/app.d",
 		"/C/src/ui/source/ui/tree2.d",
 		"/C/src/fast-draw-engine/deps/ui/deps/libdparse/test/pass_files/declarations.d",
 		"/C/src/fast-draw-engine/deps/ui/source/ui/tree2.d",
@@ -841,10 +816,7 @@
 		"/C/src/ui/source/ui/action.d",
 		"/C/src/ui/deps/libdparse/src/dparse/lexer.d",
 		"/C/D/dmd2/src/dmd/dmd/lexer.d",
-		"/C/D/dmd2/src/dmd/dmd/tokens.d",
-		"/C/src/fast-draw-engine/deps/ui/source/ui/rect.d",
-		"/C/src/fast-draw-engine/deps/ui/source/ui/drawoperation.d",
-		"/C/src/fast-draw-engine/deps/ui/source/ui/drawflow.d"
+		"/C/D/dmd2/src/dmd/dmd/tokens.d"
 	],
 	"find":
 	{
@@ -862,6 +834,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"trustedFILETIMEToSysTime",
+			"FILETIMEToSysTimeTrusted",
+			"tempCString",
+			"getFileAttributesWin",
+			"_timeCreated",
+			"WIN32_FILE_ATTRIBUTE_DATA",
+			"getFileAttributesWin",
+			"toNext",
+			"next",
 			"sRootPath",
 			"_timeCreated",
 			"isDir",
@@ -894,140 +875,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "source/app.d",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1778,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								764,
-								764
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/D/D.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/direntry.d",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10268,
-						"regions":
-						{
-							"bookmarks":
-							{
-								"flags": 144,
-								"icon": "bookmark",
-								"regions":
-								[
-									[
-										3435,
-										3435
-									]
-								],
-								"scope": "bookmarks"
-							}
-						},
-						"selection":
-						[
-							[
-								802,
-								802
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/D/D.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 524.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/D/dmd2/src/phobos/std/file.d",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 157201,
-						"regions":
-						{
-							"col_00000401_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000401_fill.png",
-								"regions":
-								[
-									[
-										43863,
-										43863
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_00001001_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00001001_fill.png",
-								"regions":
-								[
-									[
-										43863,
-										43863
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								107352,
-								108303
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/D/D.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 68594.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],

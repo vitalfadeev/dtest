@@ -4,10 +4,10 @@ import std.stdio : writeln;
 import direntry  : DirEntry;
 import direntry  : DirIterator;
 import std.algorithm : sort;
-
+import std.typecons;
 
 /** Tree */
-struct TreeNode( T )
+struct Entry( T )
 {
     /** */
     InputRange!T childs()
@@ -16,42 +16,9 @@ struct TreeNode( T )
     }
 
     /** */
-    T parent()
+    Tuple!( bool, T ) parent()
     {
-        return null;
-    }
-}
-
-
-/** */
-struct FileTreeNode
-{
-    DirEntry dirEntry;
-    alias dirEntry this;
-
-
-    /** */
-    bool parent( out FileTreeNode node )
-    {
-        auto parentPath = dirEntry.name.dirName;
-
-        if ( parentPath && ( parentPath != dirEntry.name ) )
-        {
-            node = FileTreeNode( DirEntry( parentPath ) );
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-
-    /** */
-    //FileTreeNode[] childs()
-    auto childs()
-    {
-        return DirIterator( dirEntry.name );
+        return tuple( false, T() );
     }
 }
 
@@ -61,10 +28,9 @@ void main()
     import std.array     : array;
     import std.algorithm : sort;
 
-    auto node = FileTreeNode( DirEntry( r"C:\src" ) );
+    auto node = DirEntry( r"C:\src" );
     writeln( "node: ", node );
-    FileTreeNode pn;
-    writeln( "node.parent: ", node.parent( pn ), ", ", pn );
+    writeln( "node.parent: ", node.parent );
 
     auto sorted = 
         node
@@ -87,15 +53,14 @@ void main()
 
 unittest
 {
-    auto node = FileTreeNode( r"C:\" );
+    auto node = DirEntry( r"C:\" );
 
-    FileTreeNode par;
-    assert( node.parent( par ) == false );
+    assert( node.parent().hasParent == false );
 }
 
 unittest
 {
-    auto node = FileTreeNode( r"C:\" );
+    auto node = DirEntry( r"C:\" );
 
     foreach ( child; node.childs )
     {

@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-utf32
+dtest-utf32.so
+dtest-utf32.dylib
+dtest-utf32.dll
+dtest-utf32.a
+dtest-utf32.lib
+dtest-utf32-test-*
+*.exe
+*.o
+*.obj
+*.lst

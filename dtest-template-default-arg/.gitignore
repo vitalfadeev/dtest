@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-template-default-arg
+dtest-template-default-arg.so
+dtest-template-default-arg.dylib
+dtest-template-default-arg.dll
+dtest-template-default-arg.a
+dtest-template-default-arg.lib
+dtest-template-default-arg-test-*
+*.exe
+*.o
+*.obj
+*.lst

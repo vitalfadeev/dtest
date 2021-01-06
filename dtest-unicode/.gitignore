@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-unicode
+dtest-unicode.so
+dtest-unicode.dylib
+dtest-unicode.dll
+dtest-unicode.a
+dtest-unicode.lib
+dtest-unicode-test-*
+*.exe
+*.o
+*.obj
+*.lst

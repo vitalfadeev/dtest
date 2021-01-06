@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dtest-return-tuple
+dtest-return-tuple.so
+dtest-return-tuple.dylib
+dtest-return-tuple.dll
+dtest-return-tuple.a
+dtest-return-tuple.lib
+dtest-return-tuple-test-*
+*.exe
+*.o
+*.obj
+*.lst

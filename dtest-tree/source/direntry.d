@@ -7,20 +7,16 @@ import std.range.primitives;
 import std.traits;
 import std.typecons;
 import std.algorithm : canFind;
+import std.stdio : writeln;
 
 
 version ( Windows )
 {
     import core.sys.windows.winbase, core.sys.windows.winnt, std.windows.syserror;
-}
+    import std.datetime.systime : FILETIMEToSysTime;
 
-version ( Windows )
-{
     private alias FSChar = WCHAR;       // WCHAR can be aliased to wchar or wchar_t
-}
 
-version ( Windows ) 
-{
     private 
     ulong makeUlong( DWORD dwLow, DWORD dwHigh ) @safe pure nothrow @nogc
     {
@@ -30,11 +26,6 @@ version ( Windows )
 
         return li.QuadPart;
     }
-}
-
-version ( Windows )
-{
-    import std.datetime.systime : FILETIMEToSysTime;
 }
 
 
@@ -51,73 +42,99 @@ struct DirEntry
 {
 @safe:
 public:
-    @property string name() const pure nothrow
-    {
-        return _name;
-    }
-
+    string name;
     alias name this;
+
+    WIN32_FIND_DATAW _fd;
 
 
     this( string pathname ) @trusted
     {
-        if ( isRootPath( pathname ) )
+        name = pathname;
+        readAttributes();
+    }
+
+
+    /** */
+    void readAttributes() @trusted
+    {
+        if ( isRootPath( name ) )
         {
-            _name = pathname;
-
-            with ( getFileAttributesWin( pathname ) )
-            {
-                _size             = makeUlong( nFileSizeLow, nFileSizeHigh );
-                _timeCreated      = ftCreationTime;
-                _timeLastAccessed = ftLastAccessTime;
-                _timeLastModified = ftLastWriteTime;
-                _attributes       = dwFileAttributes;
-            }
-        }
-        else
-        {
-            WIN32_FIND_DATAW fd;
-
-            HANDLE hFind = FindFirstFileW( pathname.tempCString!FSChar(), &fd );
-
-            if ( hFind == INVALID_HANDLE_VALUE )
+            if ( getFileAttributesWin( name, cast( WIN32_FILE_ATTRIBUTE_DATA* ) &_fd ) )
             {
                 //
             }
             else
             {
-                fd.cFileName[ $ - 1 ] = 0;
+                // FAIL
+            }
+        }
+        else
+        {
+            HANDLE hFind = FindFirstFileW( name.tempCString!FSChar(), &_fd );
 
-                _name             = pathname;
-                _size             = makeUlong( fd.nFileSizeLow, fd.nFileSizeHigh );
-                _timeCreated      = fd.ftCreationTime;
-                _timeLastAccessed = fd.ftLastAccessTime;
-                _timeLastModified = fd.ftLastWriteTime;
-                _attributes       = fd.dwFileAttributes;
-
+            if ( hFind == INVALID_HANDLE_VALUE )
+            {
+                // FAIL
+            }
+            else
+            {
                 FindClose( hFind );
             }
         }
     }
 
 
-    private this( string pathname, WIN32_FIND_DATAW *fd ) @trusted
+    /** */
+    alias Tuple!( bool, "hasParent", DirEntry, "parent" ) ParentResult;
+
+    /** */
+    ParentResult parent()
     {
-        _name             = pathname;
-        _size             = makeUlong( fd.nFileSizeLow, fd.nFileSizeHigh );
-        _timeCreated      = fd.ftCreationTime;
-        _timeLastAccessed = fd.ftLastAccessTime;
-        _timeLastModified = fd.ftLastWriteTime;
-        _attributes       = fd.dwFileAttributes;
+        import std.path : dirName;
+
+        auto parentPath = name.dirName;
+
+        //
+        ParentResult result;
+
+        if ( parentPath && ( parentPath != name ) )
+        {
+            result.hasParent   = true;
+            result.parent.name = parentPath;
+            result.parent.readAttributes();
+        }
+
+        return result;
     }
 
 
-    @property bool isDir() const pure nothrow
+    /** */
+    auto childs() @trusted
     {
-        return ( attributes & FILE_ATTRIBUTE_DIRECTORY ) != 0;
+        return DirIterator( name );
     }
 
-    @property bool isFile() const pure nothrow
+
+    void updateName( string path ) @trusted
+    {
+        import core.stdc.wchar_ : wcslen;
+        import std.path         : buildPath;
+        import std.conv         : to;
+
+        size_t clength = wcslen( &_fd.cFileName[ 0 ] );
+        name = buildPath( path, _fd.cFileName[ 0 .. clength ].to!string );
+    }
+
+
+    @property 
+    bool isDir() const pure nothrow
+    {
+        return ( _fd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY ) != 0;
+    }
+
+    @property 
+    bool isFile() const pure nothrow
     {
         //Are there no options in Windows other than directory and file?
         //If there are, then this probably isn't the best way to determine
@@ -125,43 +142,52 @@ public:
         return !isDir;
     }
 
-    @property bool isSymlink() const pure nothrow
+    @property 
+    bool isSymlink() const pure nothrow
     {
-        return ( attributes & FILE_ATTRIBUTE_REPARSE_POINT ) != 0;
+        return ( _fd.dwFileAttributes & FILE_ATTRIBUTE_REPARSE_POINT ) != 0;
     }
 
-    @property ulong size() const pure nothrow
+    @property 
+    ulong size() const pure nothrow
     {
-        return _size;
+        return makeUlong( _fd.nFileSizeLow, _fd.nFileSizeHigh );
     }
 
-    @property SysTime timeCreated() const nothrow
+    @property 
+    SysTime timeCreated() const nothrow
     {
-        return FILETIMEToSysTimeTrusted( &_timeCreated );
+        return trustedFILETIMEToSysTime( &_fd.ftCreationTime );
     }
 
-    @property SysTime timeLastAccessed() const nothrow
+    @property 
+    SysTime timeLastAccessed() const nothrow
     {
-        return FILETIMEToSysTimeTrusted( &_timeLastAccessed );
+        return trustedFILETIMEToSysTime( &_fd.ftLastAccessTime );
     }
 
-    @property SysTime timeLastModified() const nothrow
+    @property 
+    SysTime timeLastModified() const nothrow
     {
-        return FILETIMEToSysTimeTrusted( &_timeLastModified );
+        return trustedFILETIMEToSysTime( &_fd.ftLastWriteTime );
     }
 
-    @property uint attributes() const pure nothrow
+    @property 
+    uint attributes() const pure nothrow
     {
-        return _attributes;
+        return _fd.dwFileAttributes;
     }
 
-    @property uint linkAttributes() const pure nothrow
+    @property 
+    uint linkAttributes() const pure nothrow
     {
-        return _attributes;
+        return _fd.dwFileAttributes;
     }
+}
 
 
-private:
+version ( Windows) 
+{
     bool isRootPath( string path )
     {
         // File path formats on Windows systems:
@@ -222,103 +248,55 @@ private:
     {
         return s.canFind( '\\' );
     }
-
-
-private:
-    string   _name; /// The file or directory represented by this DirEntry.
-
-    FILETIME _timeCreated;      /// The time when the file was created.
-    FILETIME _timeLastAccessed; /// The time when the file was last accessed.
-    FILETIME _timeLastModified; /// The time when the file was last modified.
-
-    ulong    _size;       /// The size of the file in bytes.
-    uint     _attributes; /// The file attributes from WIN32_FIND_DATAW.
 }
 
 
-version ( Windows) private WIN32_FILE_ATTRIBUTE_DATA getFileAttributesWin( R )( R name )
+SysTime trustedFILETIMEToSysTime( const( FILETIME )* ft ) nothrow @trusted 
+{
+    import std.datetime.systime : FILETIMEToSysTime;
+
+    try { return cast( SysTime ) FILETIMEToSysTime( ft ); }
+    catch ( Exception e ) { return SysTime(); }
+}
+
+
+
+version ( Windows) 
+private 
+bool getFileAttributesWin( R )( R name, WIN32_FILE_ATTRIBUTE_DATA* fad )
   if ( isInputRange!R && !isInfinite!R && isSomeChar!( ElementEncodingType!R ) )
 {
     auto namez = name.tempCString!FSChar();
 
-    WIN32_FILE_ATTRIBUTE_DATA fad = void;
+    auto res =
+        GetFileAttributesExW( 
+            namez, 
+            GET_FILEEX_INFO_LEVELS.GetFileExInfoStandard, 
+            fad 
+        );
 
-    static if ( isNarrowString!R && is( immutable ElementEncodingType!R == immutable char ) )
-    {
-        static void getFA( scope const( char )[] name, scope const( FSChar )* namez, out WIN32_FILE_ATTRIBUTE_DATA fad ) @trusted
-        {
-            import std.exception : enforce;
-
-            enforce( 
-                GetFileAttributesExW( 
-                    namez, 
-                    GET_FILEEX_INFO_LEVELS.GetFileExInfoStandard, 
-                    &fad 
-                ), 
-                new FileException( name.idup ) 
-            );
-        }
-
-        getFA( name, namez, fad );
-    }
-    else
-    {
-        static void getFA( scope const( FSChar )* namez, out WIN32_FILE_ATTRIBUTE_DATA fad ) @trusted
-        {
-            import core.stdc.wchar_ : wcslen;
-            import std.conv : to;
-            import std.exception : enforce;
-
-            enforce(
-                GetFileAttributesExW( 
-                    namez, 
-                    GET_FILEEX_INFO_LEVELS.GetFileExInfoStandard, 
-                    &fad 
-                ), 
-                new FileException( namez[ 0 .. wcslen( namez ) ].to!string ) 
-            );
-        }
-
-        getFA( namez, fad );
-    }
-
-    return fad;
+    return cast( bool ) res;
 }
 
 
 
-private struct DirIteratorImpl
+version ( Windows )
 {
-  @safe:
-    string   _path;
-    DirEntry _cur;
-
-    version ( Windows )
+    private struct DirIteratorImpl
     {
-        WIN32_FIND_DATAW _findinfo;
-        HANDLE           _handle = NULL;
+      @safe:
+        string   _path;
+        DirEntry _cur;
+        HANDLE   _handle = NULL;
 
         
-        bool next()
-        {
-            if ( _handle == NULL )
-            {
-                return false;
-            }
-            else
-            {
-                return toNext( true, &_findinfo );
-            }
-        }
-
-
-        bool toNext( bool fetch, WIN32_FIND_DATAW* findinfo ) @trusted
+        bool toNext( bool fetch ) @trusted
         {
             import core.stdc.wchar_ : wcscmp;
 
             if ( fetch )
             {
-                if ( FindNextFileW( _handle, findinfo ) == FALSE )
+                if ( FindNextFileW( _handle, &_cur._fd ) == FALSE )
                 {
                     // GetLastError() == ERROR_NO_MORE_FILES
                     FindClose( _handle );
@@ -327,10 +305,10 @@ private struct DirIteratorImpl
                 }
             }
 
-            while ( wcscmp( &findinfo.cFileName[ 0 ], "." ) == 0 ||
-                    wcscmp( &findinfo.cFileName[ 0 ], ".." ) == 0 )
+            while ( wcscmp( _cur._fd.cFileName.ptr, "." ) == 0 ||
+                    wcscmp( _cur._fd.cFileName.ptr, ".." ) == 0 )
             {
-                if ( FindNextFileW( _handle, findinfo ) == FALSE )
+                if ( FindNextFileW( _handle, &_cur._fd ) == FALSE )
                 {
                     // GetLastError() == ERROR_NO_MORE_FILES
                     FindClose( _handle );
@@ -340,72 +318,74 @@ private struct DirIteratorImpl
             }
 
             //
-            import core.stdc.wchar_ : wcslen;
-            import std.path         : buildPath;
-            import std.conv         : to;
-
-            size_t clength = wcslen( &findinfo.cFileName[ 0 ] );
-            string name    = buildPath( _path, findinfo.cFileName[ 0 .. clength ].to!string );
-
-            _cur = DirEntry( name, findinfo );
+            _cur.updateName( _path );
             
             return true;
         }
-    }
 
 
-    this( string pathnameStr )
-    {
-        _path = pathnameStr;
-
-        //
-        import std.path : chainPath;
-
-        auto searchPattern = chainPath( pathnameStr, "*.*" );
-
-        static auto trustedFindFirstFileW( typeof( searchPattern ) pattern, WIN32_FIND_DATAW* findinfo ) @trusted
+        this( string pathnameStr )
         {
-            return FindFirstFileW( pattern.tempCString!FSChar(), findinfo );
+            _path = pathnameStr;
+
+            //
+            import std.path : chainPath;
+
+            auto searchPattern = chainPath( pathnameStr, "*.*" );
+
+            static auto trustedFindFirstFileW( typeof( searchPattern ) pattern, WIN32_FIND_DATAW* fd ) @trusted
+            {
+                return FindFirstFileW( pattern.tempCString!FSChar(), fd );
+            }
+
+            _handle = trustedFindFirstFileW( searchPattern, &_cur._fd );
+
+            if ( _handle == INVALID_HANDLE_VALUE )
+            {
+                _handle = NULL;
+            }
+            else
+            {
+                toNext( false );
+            }
         }
 
-        _handle = trustedFindFirstFileW( searchPattern, &_findinfo );
 
-        if ( _handle == INVALID_HANDLE_VALUE )
+        @property 
+        bool empty()
         {
-            _handle = NULL;
+            return _handle == NULL;
         }
-        else
+
+        
+        @property 
+        DirEntry front()
         {
-            toNext( false, &_findinfo );
+            return _cur;
         }
-    }
 
 
-    @property bool empty()
-    {
-        return _handle == NULL;
-    }
-
-    
-    @property DirEntry front()
-    {
-        return _cur;
-    }
-
-
-    void popFront()
-    {
-        next();
-    }
-
-
-    ~this() @trusted
-    {
-        if ( _handle != NULL )
+        void popFront()
         {
-            FindClose( _handle );
+            if ( _handle == NULL )
+            {
+                //;
+            }
+            else
+            {
+                toNext( true );
+            }
         }
-    }
+
+
+        ~this() @trusted
+        {
+            if ( _handle != NULL )
+            {
+                FindClose( _handle );
+            }
+        }
+    }    
 }
 
 
@@ -422,14 +402,4 @@ public:
     @property bool     empty()    { return impl.empty; }
     @property DirEntry front()    { return impl.front; }
               void     popFront() { impl.popFront(); }
-}
-
-
-
-SysTime FILETIMEToSysTimeTrusted( const( FILETIME )* ft ) nothrow @trusted 
-{
-    import std.datetime.systime : FILETIMEToSysTime;
-
-    try { return cast( SysTime ) FILETIMEToSysTime( ft ); }
-    catch ( Exception e ) { return SysTime(); }
 }
